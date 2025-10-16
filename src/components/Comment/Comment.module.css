@@ -1,0 +1,109 @@
+.wrapper {
+    display: flex;
+    gap: 15px;
+    background-color: #121212;
+    width: 79%;
+    min-height: 150px;
+    height: fit-content;
+    align-items: center;
+    padding: 30px 0px 30px 20px;
+    border-radius: 15px;
+    border: solid 1px #1e1e1e;
+}
+
+.avt {
+    aspect-ratio: 1/1;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: auto;
+    overflow: hidden;
+}
+
+.avt img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.content-area {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: fit-content;
+    justify-content: left;
+}
+
+.cmt-info {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: left;
+}
+
+.username {
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+}
+
+.time {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.content {
+    height: fit-content;
+}
+
+.comment {
+    margin: 0px 0px 0px 70px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.9);
+    max-width: 900px;
+    text-align: justify;
+}
+
+.interact {
+    display: flex;
+    margin-top: 20px;
+    margin-left: 70px;
+    gap: 50px;
+}
+
+.interact-btn {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    min-width: 60px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.interact-btn.clicked {
+    animation: pop 0.3s ease;
+}
+
+@keyframes pop {
+    0% {transform: scale(1);}
+    50% {transform: scale(1.2);}
+    100% {transform: scale(1);}
+}
+
+.interact-btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.blue-violet {
+    color: dodgerblue;
+}
+
+.pink {
+    color: deeppink;
+}
+
+.orange {
+    color: var(--orange);
+}

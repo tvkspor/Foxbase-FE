@@ -1,0 +1,119 @@
+.signin-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    gap: 20px;
+}
+
+.logo {
+    aspect-ratio: 1/1;
+    height: 50px;
+}
+
+.title {
+    font-size: 60px;
+    font-weight: 800;
+    color: white;
+    margin-top: -20px;
+}
+
+.signup-btn {
+    height: 50px;
+    width: 400px;
+    border-radius: 10px;
+    background-color: var(--secondary-orange);
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    transition: background-color 0.1s ease;
+}
+
+.signup-btn:hover {
+    background-color: white;
+    color: var(--secondary-orange);
+}
+
+.signup-btn:hover + .loader-container {
+    color: var(--secondary-orange);
+}
+
+.login-link {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    cursor: pointer;
+    transition: gap 0.1s ease;
+    text-decoration: none;
+}
+
+.login-link-icon {
+    color: white;
+}
+
+.login-link label {
+    color: var(--orange);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.login-link:hover {
+    gap: 20px;
+}
+
+.info-container {
+    width: 420px;
+    height: fit-content;
+    overflow: hidden;
+}
+
+.slider {
+    height: fit-content;
+    width: 200%;
+    display: flex;
+    gap: 50px;
+    transition: transform 0.3s ease;
+}
+
+.next {
+    transform: translateX(-53%);
+}
+
+.step-container {
+    height: fit-content;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.next-btn {
+    background-color: var(--green);
+    color: white;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: gap 0.2s ease, background-color 0.2s ease;
+    height: 50px;
+    width: 400px;
+    border-radius: 10px;
+    gap: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.next-btn:hover {
+    background-color: white;
+    color: var(--green);
+    gap: 50px;
+}
+
+.loader-container {
+    position: absolute;
+    transform: translateX(350px) translateY(368px);
+    color: white;
+}
+

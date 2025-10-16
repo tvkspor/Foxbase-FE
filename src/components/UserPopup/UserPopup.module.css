@@ -1,0 +1,287 @@
+.popup {
+    background-color: white;
+    position: absolute;
+    height: 280px;
+    width: 320px;
+    right: 0;
+    transform: translateY(170px) translateX(-20px);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    transition: opacity 0.1s ease-in-out;
+    visibility: hidden;
+    overflow: hidden;
+    z-index: 99999;
+}
+
+.show {
+    visibility: visible;
+    opacity: 1;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.header {
+    height: 70px;
+    width: 100%;
+    background-color: var(--green);
+    border-radius: 20px 20px 0px 0px;
+}
+
+.header-avatar {
+    aspect-ratio: 1/1;
+    height: 70px;
+    background-color: var(--orange);
+    border-radius: 50%;
+    position: absolute;
+    transform: translateX(20px) translateY(30px);
+    overflow: hidden;
+}
+
+.header-avatar img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.avatar-edit {
+    aspect-ratio: 1/1;
+    height: 25px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(170%) translateY(170%);
+    cursor: pointer;
+}
+
+.pen-icon {
+    aspect-ratio: 1/1;
+    height: 12px;
+}
+
+.username-label {
+    position: absolute;
+    color: white;
+    font-size: 20px;
+    transform: translateX(100px) translateY(40px);
+    font-weight: 700;
+}
+
+.popup-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-area {
+    display: flex;
+    padding-left: 90px;
+    padding-top: 20px;
+    gap: 20px;
+}
+
+.stats-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.item-text {
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+.item-icon {
+    aspect-ratio: 1/1;
+    height: 20px;
+}
+
+.green-text {
+    color: var(--green);
+}
+
+.blue-text {
+    color: var(--blue);
+}
+
+.action-area {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    gap: 5px;
+}
+
+.action-title {
+    display: flex;
+    flex-direction: column;
+}
+
+.action-label {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.line {
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 90%;
+    height: 1px;
+}
+
+.actions {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+}
+
+.action {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    gap: 10px;
+    cursor: pointer;
+    padding: 5px 0px;
+    border-radius: 10px;
+    width: 90%;
+    text-decoration: none;
+}
+
+.action:hover {
+    background-color: var(--hover-gray);
+}
+
+.action-name {
+    color: black;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.key-icon {
+    color: var(--golden);
+    margin-left: 10px;
+}
+
+.money-icon {
+    color: var(--dark-green);
+    margin-left: 10px;
+}
+
+.out-icon {
+    color: var(--red);
+    margin-left: 10px;
+}
+
+.slider {
+    width: 200%;
+    height: 125px;
+    display: flex;
+    transition: transform 0.2s ease;
+}
+
+.next {
+    transform: translateX(-50%);
+}
+
+.black-text {
+    color: black;
+}
+
+.small-text {
+    font-size: 14px;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.left-space {
+    margin-left: 5px;
+}
+
+.textbox {
+    margin-top: 5px;
+    line-height: 30px;
+    width: 270px;
+    border: solid 1px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+.textbox input {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    padding-left: 15px;
+    color: black;
+    width: 80%;
+    font-size: 14px;
+}
+
+.check-icon {
+    color: var(--green);
+    transform: translateX(10px);
+}
+
+.btn-container {
+    display: flex;
+    gap: 10px;
+    height: 50px;
+    width: 100%;
+    align-items: center;
+}
+
+.back-btn {
+    height: 30px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: var(--pink);
+    border: solid 1px var(--pink);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.confirm-btn {
+    height: 30px;
+    width: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: white;
+    background-color: var(--green);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.back-btn:hover,
+.confirm-btn:hover {
+    opacity: 0.9;
+}
+
+.purchase {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.amount-container {
+    display: flex;
+    gap: 10px;
+    margin-left: 5px;
+}
+
+.amount-label {
+    font-weight: 600;
+}
+
+.red-text {
+    color: var(--red)
+}

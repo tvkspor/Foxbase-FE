@@ -1,0 +1,151 @@
+.wrapper {
+    height: 320px;
+    width: 170px;
+    display: flex;
+    justify-content: right;
+    flex-direction: column;
+}
+
+.cover {
+    height: 85%;
+    width: 100%;
+    border: solid 1px transparent;
+    border-radius: 15px;
+    display: flex;
+    justify-content: right;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.cover-image {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    border-radius: 15px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 99;
+    opacity: 0;
+    transition: opacity 0.1s ease-in;
+}
+
+.cover:hover {
+    border: solid 1px white;
+}
+
+.cover:hover .overlay {
+    opacity: 1;
+}
+
+.free-read {
+    background: linear-gradient(to right, rgba(41,171,135,0.5), rgba(41,171,135,1) 80%);
+}
+
+.cost-read {
+    background: linear-gradient(to right, rgba(255,20,147,0.5), rgba(255,20,147,1) 80%);
+}
+
+.read-btn {
+    margin-top: 110px;
+    height: 50px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    border-radius: 25px;
+    transition: box-shadow 0.1s ease-out;
+    cursor: pointer;
+    color: white;
+}
+
+.free-read:hover {
+    box-shadow: rgba(41,171,135, 0.8) 0px 5px 15px;
+}
+
+.cost-read:hover {
+    box-shadow: rgba(255,20,147, 0.8) 0px 5px 15px;
+}
+
+.read-btn label {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.read-btn-icon {
+    aspect-ratio: 1/1;
+    height: 20px;
+}
+
+.stamp {
+    height: 50px;
+    width: 90%;
+    display: flex;
+    justify-content: right;
+
+}
+
+.free-lb {
+    color: var(--green);
+}
+
+.cost-lb {
+    color: var(--pink);
+}
+
+.free {
+    background-color: var(--green);
+}
+
+.cost {
+    background-color: var(--pink);
+}
+
+.stamp-type {
+    height: 30px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    border-radius: 0px 0px 0px 20px;
+    z-index: 1;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-right: -20px;
+    color: white;
+}
+
+.stamp-icon-container {
+    background-color: white;
+    aspect-ratio: 1/1;
+    height: 40px;
+    border-radius: 0px 15px 0px 60px;
+    display: flex;
+    z-index: 1;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.stamp-icon {
+    aspect-ratio: 1/1;
+    height: 18px;
+    transform: translateX(15px) translateY(8px);
+}
+
+.book-title {
+    font-size: 16px;
+    font-weight: 700;
+    transform: translateY(10px);
+    text-align: left;
+    color: white;
+}

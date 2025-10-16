@@ -1,0 +1,135 @@
+.login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    gap: 20px;
+}
+
+.logo {
+    aspect-ratio: 1/1;
+    height: 50px;
+}
+
+.title {
+    font-size: 60px;
+    font-weight: 800;
+    color: white;
+    margin-top: -20px;
+}
+
+.reset-pw-link {
+    cursor: pointer;
+    color: white;
+    font-weight: 600;
+    transform: translateX(130px);
+    text-decoration: none;
+}
+
+.reset-pw-link:hover {
+    text-decoration: underline;
+}
+
+.login-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 400px;
+    border-radius: 10px;
+    background-color: var(--secondary-orange);
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    transition: background-color 0.1s ease;
+}
+
+.login-btn:hover {
+    background-color: white;
+    color: var(--secondary-orange);
+}
+
+.seperator div {
+    height: 2px;
+    width: 400px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.seperator label {
+    position: absolute;
+    padding: 0px 5px;
+    transform: translateX(190px) translateY(-10px);
+    background-color: #121212;
+    font-size: 12px;
+    color: white;
+}
+
+.third-party-auth-button {
+    background-color: white;
+    height: 50px;
+    width: 400px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    transition: opacity 0.1s ease;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.third-party-auth-button:hover {
+    opacity: 0.9;
+}
+
+.third-party-auth-button img {
+    aspect-ratio: 1/1;
+    height: 25px;
+    margin-left: 20px;
+}
+
+.third-party-auth-button label {
+    color: black;
+    font-size: 16px;
+    font-weight: 700;
+    margin-left: 90px;
+}
+
+.create-account-link {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    cursor: pointer;
+    transition: gap 0.1s ease;
+    text-decoration: none;
+}
+
+.create-account-link:hover {
+    gap: 20px;
+}
+
+.create-account-link img {
+    aspect-ratio: 1/1;
+    height: 30px;
+}
+
+.create-account-link label {
+    font-size: 20px;
+    color: var(--orange);
+    font-weight: 700;
+}
+
+.arrow-right-icon {
+    color: var(--orange);
+    aspect-ratio: 1/1;
+    height: 20px;
+}
+
+.loader-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    transform: translate(-150px, 45px);
+    color: black;
+}

@@ -1,0 +1,86 @@
+.reset-password-container {
+    height: 100%;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.reset-title {
+    color: white;
+    font-size: 35px;
+    left: 0;
+    margin: 0;
+}
+
+.reset-message {
+    color: rgba(255, 255, 255, 0.5);
+    width: 350px;
+    text-align: justify;
+    margin: 0px 0px 20px 0px;
+    text-align: center;
+}
+
+.ann {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.verify-lb {
+    font-size: 16px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.verify-icon {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.verified {
+    color: var(--green);
+}
+
+.action-area {
+    margin-top: 20px;
+    width: 380px;
+    display: flex;
+    align-items: center;
+}
+
+.resend-btn {
+    height: 40px;
+    width: 150px;
+    background-color: royalblue;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+    transition: background-color 0.2s ease;
+    cursor: pointer;
+    margin-right: auto;
+}
+
+.resend-btn:hover {
+    background-color: white;
+    color: royalblue;
+    display: flex;
+}
+
+.rotate-icon {
+    transition: transform 0.5s ease;
+}
+
+.resend-btn:hover .rotate-icon {
+    transform: rotate(360deg);
+}
+
+.expire-label {
+    color: var(--red);
+    margin-left: auto;
+}

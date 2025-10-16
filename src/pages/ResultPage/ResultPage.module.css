@@ -1,0 +1,128 @@
+.wrapper {
+    min-height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 200px;
+}
+
+.book-list {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    min-height: 100%;
+    align-items: center;
+    justify-content: flex-start;
+    width: 90%;
+}
+
+.pagination {
+    margin-top: 100px;
+    height: 50px;
+    width: 500px;
+    border-radius: 15px;
+    background-color: #1e1e1e;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid #2a2a2a;
+}
+
+.page-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    gap: 20px;
+}
+
+.link-item {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 1/1;
+    height: 30px;
+    border-radius: 10px;
+    border: solid 3px transparent;
+    transition: border 0.1s ease, transform 0.05s ease-in-out;
+}
+
+.link:hover {
+    border: solid 3px var(--secondary-orange);
+    color: var(--secondary-orange);
+    transform: scale(1.2);
+}
+
+.control-btn {
+    aspect-ratio: 1/1;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.control-btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.types-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.type {
+    height: 50px;
+    width: fit-content;
+    padding: 0px 20px;
+    border-radius: 25px;
+    font-weight: 600;
+    background-color: rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s ease;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.result-label {
+    margin-bottom: 0px;
+}
+
+.type:hover {
+    opacity: 0.9;
+}
+
+.active {
+    background-color: var(--green);
+    color: white;
+}
+
+.page-active {
+    border: solid 3px var(--secondary-orange);
+    color: var(--secondary-orange);
+}
+
+.unfound {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 25px;
+    color: rgba(255, 255, 255, 0.5);
+}
